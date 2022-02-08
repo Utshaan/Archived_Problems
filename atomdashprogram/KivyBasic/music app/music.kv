@@ -1,0 +1,23 @@
+#:kivy 2.0.0
+<Widgets>:
+    Button:
+        text:"scales"
+        pos_hint: {"x":0.5, "top":0.5}
+        on_release: root.btn()
+    Button:
+        text:"chords"
+
+        pos_hint: {"x":1, "top":0}
+        on_release: root.btn()
+
+<P>:
+    Label:
+        text: "The library"
+        size_hint: 0.6, 0.2
+        pos_hint: {"x":0.2, "top":1}
+
+    Button:
+        text: "The Identifier?"
+        color:0,0,0
+        size_hint: 0.8, 0.2
+        pos_hint: {"x":0.1, "top":0.2}
