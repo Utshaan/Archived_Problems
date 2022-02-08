@@ -5,7 +5,7 @@ import pygame
 # import os
 # import time
 import playsound
-
+#HAHA GOTEM
 
 def speak(text):
     engine = pyttsx3.init()
