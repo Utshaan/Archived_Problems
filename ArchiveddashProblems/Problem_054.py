@@ -157,7 +157,7 @@ def winner(A_cards,B_cards):
         return max(lis1)>max(lis2)
 
 t = time()
-with open(r"C:\Users\Utkar\Dropbox\Atom programs\archived problems\read_from_here\p054_poker.txt",'r') as f:
+with open(r"D:\utkarsh\Github_Directories\Repo_Archived_Problems\ArchiveddashProblems\read_from_here\p054_poker.txt",'r') as f:
     stuff = f.readlines()
     ans = []
     for ele in stuff:

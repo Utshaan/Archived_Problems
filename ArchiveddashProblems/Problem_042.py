@@ -2,7 +2,7 @@ from time import time
 from fpack import triangle_number, name_value
 
 tim = time()
-with open(r'C:\Users\Utkar\Dropbox\Atom programs\archived problems\read_from_here\p042_words.txt','r') as f:
+with open(r'D:\utkarsh\Github_Directories\Repo_Archived_Problems\ArchiveddashProblems\read_from_here\p042_words.txt','r') as f:
     file=f.read()
 stuff = str.split(file, '","')
 stuff[0] = stuff[0][1:]

@@ -15,7 +15,7 @@ cypher_hit_list = list(product([i for i in range(97,123)], repeat=3))
 
 listopher = set([(i) for i in range(97,123)] + [(i) for i in range(32,91)])
 
-with open(r'C:\Users\Utkar\Dropbox\Atom programs\archived problems\read_from_here\p059_cipher.txt') as file:
+with open(r'D:\utkarsh\Github_Directories\Repo_Archived_Problems\ArchiveddashProblems\read_from_here\p059_cipher.txt') as file:
     stuff = list(map(int, str.split(file.read(), ',')))
 
 mega = []

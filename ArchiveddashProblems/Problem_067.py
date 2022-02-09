@@ -1,6 +1,6 @@
 from time import time
 
-with open(r"C:\Users\Utkar\Dropbox\Atom programs\archived problems\read_from_here\p067_triangle.txt", 'r') as file:
+with open(r"D:\utkarsh\Github_Directories\Repo_Archived_Problems\ArchiveddashProblems\read_from_here\p067_triangle.txt", 'r') as file:
     stuff = file.readlines()
 
 temp = ''
