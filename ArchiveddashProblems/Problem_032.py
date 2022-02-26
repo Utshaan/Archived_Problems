@@ -1,4 +1,3 @@
-import itertools
 from time import *
 from itertools import *
 

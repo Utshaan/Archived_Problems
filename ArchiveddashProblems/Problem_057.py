@@ -1,5 +1,3 @@
-from fractions import Fraction
-
 i = 0
 j = 0
 li = [1,1]

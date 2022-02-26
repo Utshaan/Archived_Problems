@@ -1,4 +1,3 @@
-import math
 import time
 start_time = time.time()
 marked = [0] * 2000000
