@@ -1,3 +1,13 @@
+black==22.1.0
+click==8.0.4
+colorama==0.4.4
+commonmark==0.9.1
 mpmath==1.2.1
+mypy-extensions==0.4.3
+pathfinding==1.0.1
+pathspec==0.9.0
+platformdirs==2.5.1
+Pygments==2.11.2
+rich==11.2.0
 sympy==1.9
-yapf==0.32.0
+tomli==2.0.1
