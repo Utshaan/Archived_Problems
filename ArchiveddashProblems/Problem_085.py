@@ -5,8 +5,8 @@ def cl(x,y):
 
 t = time()
 low = 1_000_000
-for i in range(1, 2000):
-    for j in range(1,2000):
+for i in range(1, 100):
+    for j in range(1,100):
         if cl(i,j) < low:
             low = cl(i,j)
             x,y = i,j
