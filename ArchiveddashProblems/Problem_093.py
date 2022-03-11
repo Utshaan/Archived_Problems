@@ -6,8 +6,8 @@ iter_sym = tuple(product(["*", "+", "-", "/"], repeat=3))
 p = []
 for k in iterable:
     o = list(permutations(k))
+    l = set()
     for i in o:
-        l = set()
         for s in iter_sym:
             try:
                 do1 = eval(f"({i[0]}{s[0]}{i[1]}){s[1]}{i[2]}{s[2]}{i[3]}")
@@ -29,15 +29,14 @@ for k in iterable:
             l.add(int(do2)) if do2 > 0 and do2 == int(do2) else 10000
             l.add(int(do3)) if do3 > 0 and do3 == int(do3) else 10000
             l.add(int(do4)) if do4 > 0 and do4 == int(do4) else 10000
-        p.append(tuple(sorted(l)))
+    p.append(tuple(sorted(l)))
 
 high = 0
 for ele in p:
     start = 1
-    while ele[start-1] == start:
+    while ele[start - 1] == start:
         start += 1
     if high < start:
         high = start
 
 print(high)
-print(p)
