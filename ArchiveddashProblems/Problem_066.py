@@ -1,6 +1,5 @@
 def continuity(x):
     yes = []
-    cool = []
     m = 0
     d = 1
     a = int(x**(1/2))
