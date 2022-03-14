@@ -1,4 +1,5 @@
 import time
+
 start_time = time.time()
 marked = [0] * 2000000
 value = 3
@@ -11,4 +12,4 @@ while value < 2000000:
             marked[i] = 1
             i += value
     value += 2
-print(f'{s} - Process finished in {time.time() - start_time} seconds')
+print(f"{s} - Process finished in {time.time() - start_time} seconds")

@@ -19,17 +19,18 @@
 #     l.append(rep)
 #     return(l)
 
+
 def continuity(x):
     yes = []
     cool = []
     m = 0
     d = 1
-    a = int(x**(1/2))
+    a = int(x ** (1 / 2))
     yes.append(a)
-    while a != 2*int(((x)**(1/2))):
-        m = d*a - m
-        d = (x - m**2)/d
-        a = int(((x**(1/2))+m)/d)
+    while a != 2 * int(((x) ** (1 / 2))):
+        m = d * a - m
+        d = (x - m**2) / d
+        a = int(((x ** (1 / 2)) + m) / d)
         cool.append(a)
     yes.append(cool)
     return yes
@@ -37,8 +38,8 @@ def continuity(x):
 
 ans = 0
 t = [a**2 for a in range(101)]
-l = [a for a in range(2,10001) if a not in t]
+l = [a for a in range(2, 10001) if a not in t]
 for a in l:
-    if len(continuity(a)[1])%2 != 0:
+    if len(continuity(a)[1]) % 2 != 0:
         ans += 1
 print(ans)

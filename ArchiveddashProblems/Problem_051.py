@@ -1,9 +1,10 @@
 from fpack import primelist_till_x, divide_primecheck
 from time import time
 
-t1=time()
+t1 = time()
 x = primelist_till_x(1000000)
-primes = [i for i in x if i>10**4]
+primes = [i for i in x if i > 10**4]
+
 
 def repeat(b):
     a = str(b)
@@ -12,11 +13,13 @@ def repeat(b):
     multi = dict()
     for i in seto:
         multi[i] = listo.count(i)
-    return(multi)
+    return multi
+
 
 def reverse_dict(x):
     s = dict(map(reversed, x))
     return s
+
 
 superi = []
 ans = []
@@ -33,14 +36,14 @@ for i in superi:
             repeatednumbers.append(repeatkeys[ele])
     store = []
     for rem in repeatednumbers:
-        store.append(str(i).replace(str(rem),'*'))
+        store.append(str(i).replace(str(rem), "*"))
     for j in store:
-        if set(j) != {'*'}:
-            temp=[]
+        if set(j) != {"*"}:
+            temp = []
             for r in range(10):
-                temp.append(j.replace('*',str(r)))
-            perm=[int(k) for k in temp if divide_primecheck(int(k))]
-            if len(perm) == 8 and len(str(perm[0]))==len(str(perm[1])):
-                    print(min(perm))
-                    print(f'Process finished in {time()-t1}s')
-                    raise SystemExit()
+                temp.append(j.replace("*", str(r)))
+            perm = [int(k) for k in temp if divide_primecheck(int(k))]
+            if len(perm) == 8 and len(str(perm[0])) == len(str(perm[1])):
+                print(min(perm))
+                print(f"Process finished in {time()-t1}s")
+                raise SystemExit()

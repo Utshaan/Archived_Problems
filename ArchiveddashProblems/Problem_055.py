@@ -1,8 +1,10 @@
 from fpack import palindrome
 
+
 def reverse(x):
     x = str(x)[::-1]
-    return(int(x))
+    return int(x)
+
 
 i = 1
 op = 0

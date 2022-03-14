@@ -23,13 +23,14 @@ def chain(x):
         chain_values.append(x)
         chain_len += 1
 
+
 do_dic = dict()
 t_1 = time()
 
-for i in track(range(1,1_000_000), description='Tracking....'):
+for i in track(range(1, 1_000_000), description="Tracking...."):
     do_dic[i] = do(i)
 
-high = 0,0
+high = 0, 0
 
 for i in range(11, 1_000_000):
     temp = chain(i)
@@ -37,4 +38,6 @@ for i in range(11, 1_000_000):
         print(temp[0], i)
         high = temp
 
-print(f'{high[0]} terms in the chain which has minimum = {min(high[1])}\nTime taken = {time() - t_1}')
+print(
+    f"{high[0]} terms in the chain which has minimum = {min(high[1])}\nTime taken = {time() - t_1}"
+)

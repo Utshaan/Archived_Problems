@@ -20,6 +20,6 @@ for k in range(80, 1, -1):
             test_matrice[k - 1][i - 2], test_matrice[k - 2][i - 1]
         )
 
-if __name__ == '__main__':
+if __name__ == "__main__":
 
     print(test_matrice[0][0])

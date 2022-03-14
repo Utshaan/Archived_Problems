@@ -68,7 +68,7 @@ def generate_game():
 ch_order = ["GO", "JL"]
 cc_order = ["GO", "JL", "C1", "E3", "H2", "R1", "RN", "RN", "UN", "3B"]
 
-occurance = [0]*40
+occurance = [0] * 40
 pos = 0
 rep = [0, 0, 0]
 cc_list, ch_list = generate_game()

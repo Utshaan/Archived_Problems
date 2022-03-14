@@ -1,5 +1,5 @@
 import math
-import time 
+import time
 from fpack import primelist_till_x
 
 x = int(input("Enter the number: "))

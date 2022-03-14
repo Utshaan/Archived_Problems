@@ -1,12 +1,14 @@
 from fpack import divide_primecheck
 
+
 def Gfollowers(x):
     i = 0
-    while x-i > 0:
-        if divide_primecheck((x-2*(i**2))):
+    while x - i > 0:
+        if divide_primecheck((x - 2 * (i**2))):
             return True
-        i+=1
+        i += 1
     return False
+
 
 b = 3
 while True:
@@ -14,4 +16,4 @@ while True:
         if not Gfollowers(b):
             print(b)
             break
-    b+=2
+    b += 2

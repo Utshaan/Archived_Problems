@@ -1,6 +1,7 @@
 from time import time
 from math import factorial
 
+
 def cycle(x: str) -> list:
     l = []
     ele = x
@@ -11,7 +12,8 @@ def cycle(x: str) -> list:
         for p in t:
             sum += factorial(p)
         ele = str(sum)
-    return(l)
+    return l
+
 
 t1 = time()
 i = 2

@@ -14,20 +14,22 @@
 from sympy import primefactors
 from time import time
 
+
 def phi_n(x):
     l = primefactors(x)
     phi_n = x
     for ele in l:
-        phi_n*= (1 - 1/ele)
+        phi_n *= 1 - 1 / ele
     return int(phi_n)
+
 
 t = time()
 i = 2
 high = 0
 ans = 0
 while i <= 10**6:
-    if i/phi_n(i) > high:
-        high = i/phi_n(i)
+    if i / phi_n(i) > high:
+        high = i / phi_n(i)
         ans = i
     i += 1
 

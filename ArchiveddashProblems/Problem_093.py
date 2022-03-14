@@ -45,4 +45,6 @@ for ele in p:
         high = start
         k = ele
 
-print(f'Answer: {sum(i * (10 ** (3 - index)) for index, i in enumerate(dic[k]))},\nTime Taken: {time() - t1}')
+print(
+    f"Answer: {sum(i * (10 ** (3 - index)) for index, i in enumerate(dic[k]))},\nTime Taken: {time() - t1}"
+)

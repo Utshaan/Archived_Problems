@@ -1,5 +1,6 @@
 from time import time
 from rich import print
+
 grid_size = 50
 
 num = set()
@@ -25,4 +26,6 @@ for y2 in range(1, grid_size + 1):
                 if y2 * (y2 - y1) / (x2 * (x2 - x1)) == -1:
                     num.add((x1, y1, x2, y2))
 
-print(f'Number of right angled triangles: {len(num)},\nTime taken = {time() - t} seconds')
+print(
+    f"Number of right angled triangles: {len(num)},\nTime taken = {time() - t} seconds"
+)

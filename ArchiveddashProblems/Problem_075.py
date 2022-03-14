@@ -6,13 +6,13 @@ limit = 1_500_001
 cool = set()
 answerful_list = dict()
 ans = 0
-for m in range(2, int((limit/2)**(1/2)) + 2):
-    for n in range(1,m):
-        if gcd(m,n) == 1 and (m+n)%2 == 1:
-            p = 2*(m**2 + m*n)
+for m in range(2, int((limit / 2) ** (1 / 2)) + 2):
+    for n in range(1, m):
+        if gcd(m, n) == 1 and (m + n) % 2 == 1:
+            p = 2 * (m**2 + m * n)
             cool.add(p)
 for q in cool:
-    for i in range(q,limit+1, q):
+    for i in range(q, limit + 1, q):
         try:
             answerful_list[i] += 1
         except:

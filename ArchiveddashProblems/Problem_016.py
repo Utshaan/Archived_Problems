@@ -1,4 +1,5 @@
 import time
+
 x = int(input("what is the power: \n"))
 t = time.time()
 y = str(2**x)

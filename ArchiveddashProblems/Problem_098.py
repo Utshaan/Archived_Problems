@@ -1,10 +1,12 @@
 from rich import print
 from time import time
 
+
 def squaric_anagram(map: dict, word: str) -> None:
     for key in map:
         word = word.replace(key, map[key])
     return int(word)
+
 
 t_1 = time()
 with open(
@@ -33,12 +35,16 @@ for ele in l:
             str(square)
         ):
             map = dict(zip(list(ele[0]), list(str(square))))
-            if squaric_anagram(map, ele[1]) in squares and len(str(square)) == len(str(squaric_anagram(map, ele[1]))):
-                k.add((max(square, squaric_anagram(map, ele[1])),ele))
+            if squaric_anagram(map, ele[1]) in squares and len(str(square)) == len(
+                str(squaric_anagram(map, ele[1]))
+            ):
+                k.add((max(square, squaric_anagram(map, ele[1])), ele))
 
 
-high = 0,0
+high = 0, 0
 for temp in k:
     if temp[0] > high[0]:
         high = temp
-print(f'[green]The words:[/green] {high[1]}\n[green]The max value[/green] = {high[0]}\nTime Taken : {time()-t_1}')
+print(
+    f"[green]The words:[/green] {high[1]}\n[green]The max value[/green] = {high[0]}\nTime Taken : {time()-t_1}"
+)

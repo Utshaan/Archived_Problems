@@ -15,4 +15,4 @@ for y, x in path:
     ans += usable[x][y]
 
 print(ans)
-print(f'time taken = {time() - t}')
+print(f"time taken = {time() - t}")

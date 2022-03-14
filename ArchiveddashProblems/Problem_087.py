@@ -19,4 +19,4 @@ for i in primes:
                     if n < 50_000_000:
                         num.add(n)
 
-print(f'Total Numbers = {len(num)},\nTime Taken: {time() - t} seconds')
+print(f"Total Numbers = {len(num)},\nTime Taken: {time() - t} seconds")

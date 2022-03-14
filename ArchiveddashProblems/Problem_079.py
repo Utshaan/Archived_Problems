@@ -1,2 +1,2 @@
-#damnit, it was easy with hand
-#lets try coding later
+# damnit, it was easy with hand
+# lets try coding later

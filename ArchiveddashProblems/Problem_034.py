@@ -8,4 +8,4 @@ while i < 50000:
     if sum_facto_digi(i):
         los += i
     i += 1
-print(f'{los}, time taken - {time() - t}')
+print(f"{los}, time taken - {time() - t}")

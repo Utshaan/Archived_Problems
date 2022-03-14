@@ -1,9 +1,14 @@
-from fpack import primelist_till_x, delete_from_left, delete_from_right, divide_primecheck
+from fpack import (
+    primelist_till_x,
+    delete_from_left,
+    delete_from_right,
+    divide_primecheck,
+)
 from time import time
 
-x = int(input('Check till where: \n'))
+x = int(input("Check till where: \n"))
 t = time()
-l = [i for i in primelist_till_x(x) if len(str(i))>1]
+l = [i for i in primelist_till_x(x) if len(str(i)) > 1]
 primes = [i for i in primelist_till_x(x)]
 main = set()
 
